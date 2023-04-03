@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #33393d;
+  }
+
+ .title{
+    text-align: center;
+    padding-bottom: 30px;
+    color: #fcfdff;
+    font-family: monospace;
+    font-size: 30px; 
+  }
+
+    button:focus{
+        outline: 0;
+    }
+
+    #replay{
+        font-family: monospace;
+        font-size: 1.2rem;
+        margin-top: 90px;
+        padding: 10px 15px 10px 15px;
+        background: #292f4a;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transform: rotate(270deg);
+        color: white;
+        transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    #replay:hover {
+        background: #292f4a;
+        background: #009373;
+        transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+  .title{
+    text-align: center;
+    padding: 20px, 10px;
+  }
+  /* dont align things here because then everything inside the div is gonna go to the center */
+  
+  .wrapper{
+    background-color: #161136;
+    /*70% and 65% of the width and heigh*/
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  .details{
+    background-color: #292f4a;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #snake{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+  }
+  
+  .play-board{
+    height: 100%;
+    width: 100%;
+    background-color:#1f2439;
+    display: grid;
+    /*small squares*/
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  }
+
+  .play-board .food{
+    border-radius: 50%;
+    background-color: rgb(141, 26, 26);
+  }
+
+  .play-board .head{
+    background-color: rgb(99, 145, 30);
+  } 
