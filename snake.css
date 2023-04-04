@@ -91,8 +91,10 @@
   .play-board .food{
     border-radius: 50%;
     background-color: rgb(141, 26, 26);
+    box-shadow: 0 0 20px 5px rgb(141, 26, 26);
   }
 
   .play-board .head{
     background-color: rgb(99, 145, 30);
+    box-shadow: 0 0 20px 5px rgb(99, 145, 30);
   } 
